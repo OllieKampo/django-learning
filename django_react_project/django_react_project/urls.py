@@ -15,8 +15,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
+from students import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # The first endpoint handles both creations (POST) and listing (GET).
+    # The second removes (DELETE) or update (PUT) the data of a single student.
+    re_path(r'^api/students/$', views.students_list),
+    re_path(r'^api/students/([0-9])$', views.students_detail),
 ]
