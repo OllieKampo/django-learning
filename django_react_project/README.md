@@ -1,0 +1,1 @@
+Tutorial on using react with django from https://blog.logrocket.com/using-react-django-create-app-tutorial/.
