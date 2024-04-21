@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, re_path
 from students import views
 
+# The admin path was already there. The only things we added are the students endpoints.
 urlpatterns = [
     path('admin/', admin.site.urls),
     # The first endpoint handles both creations (POST) and listing (GET).
