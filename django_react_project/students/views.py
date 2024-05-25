@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view
 from rest_framework import status
 
 from .models import Student
-from .serializers import *
+from .serializers import StudentSerializer
 
 @api_view(['GET', 'POST'])
 def students_list(request):

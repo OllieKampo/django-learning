@@ -8,6 +8,12 @@
 
 // The createStudent function will deal with the HTTP POST requests of our form. Every time we press the “submit” button, this function will be called, triggering the Axios post() function and passing the current state in the request’s body.
 
+// The editStudent function works almost like the previous one, but by calling our PUT operation instead.
+
+// The defaultIfEmpty function was created as an auxiliary function that’ll check the current value of each field in order to determine if they’re going to be filled with the value of the state — in case any exists, for editing — or not, when creating a new student.
+
+// The render function will just compose our form with the help of reactstrap components. Note the onSubmit property, which checks for a props property called student. If the property exists, the submit function will be for editing (the value was passed by the parent component); otherwise, it’s for creation.
+
 // Once it’s completed, we’ll call two props functions: resetState to refresh the table, and toggle to close the modal.
 
 import React from "react";
