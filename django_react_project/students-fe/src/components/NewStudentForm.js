@@ -1,6 +1,8 @@
-// In the first lines, we’re importing some reactstrap components for the first time, including Form, Button, and other components that will comprise our form.
+// In the first lines, we’re importing some reactstrap components for the first time,
+// including Form, Button, and other components that will comprise our form.
 
-// Then, we created our state object with the corresponding properties of our NewStudentForm model. This is going to be useful for manipulating each prop individually.
+// Then, we created our state object with the corresponding properties of our NewStudentForm model.
+// This is going to be useful for manipulating each prop individually.
 
 // The componentDidMount function will run after the component finishes its startup, so we can recover the student’s props from the parent component (this.props) here, and set the state with them (if they exist, for the editing scenario.)
 
